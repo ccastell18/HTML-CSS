@@ -85,7 +85,7 @@ color: #f7c08a;
 .py-3{ padding: 30px 0; }
 
 /* navbar */
-#navbar{
+#navbar {
     background: #333;
     color: #fff;
     overflow: auto;
@@ -95,7 +95,7 @@ color: #f7c08a;
     color: #fff;
 }
 
-#navbar h1 {
+#navbar .logo {
     float: left;
     padding-top: 20px;
 }
@@ -202,7 +202,7 @@ color: #f7c08a;
 
 /* Testimonials */
 #testimonials{
-    height: 600px;
+    height: 100%;
     background: url('../img/test-bg.jpg') no-repeat center center/cover;
     padding-top: 100px;
 }
