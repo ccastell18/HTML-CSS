@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS variables</title>
+    <style>
+        :root{
+            --max-width: 1100px;
+            --primary-color: steelblue;
+            --secondary-color: skyblue;
+            --light-color: #f4f4f4;
+            --box-width-1: 1;
+            --box-width-2: 2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            --light-color: #f4f4f4;
+            background: var(--light-color);
+        }
+        header{
+            background: var(--primary-color);
+            border-bottom: 5px solid var(--secondary-color); 
+            color: white;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width);
+        }
+        .box{
+        background-color: var(--primary-color);
+        border-bottom: 5px var(--secondary-color) solid;
+        padding: 1rem;
+        margin: 1rem;
+        color: white;
+        }
+
+        .box-1{flex: var(--box-width-1);}
+        .box-2{flex: var(--box-width-2);}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla deleniti omnis sed tenetur illo debitis quasi autem quam beatae accusantium ex enim harum assumenda.</p>
+        </div>
+        <div class="box box-2">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nulla deleniti omnis sed tenetur illo debitis quasi autem quam beatae accusantium ex enim harum assumenda.</p>
+        </div>
+    </div>
+</body>
+</html>
