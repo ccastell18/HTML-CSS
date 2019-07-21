@@ -19,7 +19,7 @@
     </section>
     <!-- Section 2 -->
     <section id="page-2" class="page">
-        <h1>Welcome To My Presentation</h1>
+        <h1>Page 2</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maxime iure id? Dolorem, fuga facilis aspernatur ducimus aliquid libero vel totam voluptatibus at delectus alias, accusamus ipsam eos eaque. Error nam fugit debitis ex hic culpa beatae numquam ducimus. Tenetur!</p>
         <div>
             <a href="#page-1" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i> </a>
@@ -28,7 +28,7 @@
     </section>
         <!-- section3 -->
         <section id="page-3" class="page">
-            <h1>Welcome To My Presentation</h1>
+            <h1>Page 3</h1>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maxime iure id? Dolorem, fuga facilis aspernatur ducimus aliquid libero vel totam voluptatibus at delectus alias, accusamus ipsam eos eaque. Error nam fugit debitis ex hic culpa beatae numquam ducimus. Tenetur!</p>
              <div>
                 <a href="#page-2" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i> </a>
@@ -37,12 +37,29 @@
         </section>
         <!-- Page 4 -->
         <section id="page-4" class="page">
-            <h1>Welcome To My Presentation</h1>
+            <h1>Page 4</h1>
              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maxime iure id? Dolorem, fuga facilis aspernatur ducimus aliquid libero vel totam voluptatibus at delectus alias, accusamus ipsam eos eaque. Error nam fugit debitis ex hic culpa beatae numquam ducimus. Tenetur!</p>
              <div>
                 <a href="#page-3" class="btn btn-dark">Prev Page <i class="fas fa-arrow-circle-up"></i> </a>
                 
             </div>
         </section>
+
+        <script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+        <!-- smooth scrolling -->
+    <script>
+            $('.btn').on('click', function(event) {
+                if (this.hash !== ''){
+                    event.preventDefault()
+                    const hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    },800);
+                }
+            });
+    </script>
 </body>
 </html>
