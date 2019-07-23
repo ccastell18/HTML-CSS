@@ -107,7 +107,17 @@ h1, h2, h3, h4, h5, h6{
 .bg-dark h2,
 .bg-dark h3,
 .bg-dark a,
-.bg-primary,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a{
+    color: white;
+}
+
 
 
 .py-1{padding: 1.5rem 0;}
