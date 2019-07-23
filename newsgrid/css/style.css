@@ -141,6 +141,10 @@ h1, h2, h3, h4, h5, h6{
     color: var(--primary-color) !important;
 }
 
+.l-heading{
+    font-size: 3rem;
+}
+
 /* Inner page grid container */
 .page-container{
     display: grid;
@@ -256,6 +260,18 @@ h1, h2, h3, h4, h5, h6{
     grid-column: 2 /span 2;
 }
 
+/* Article */
+#article .meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.5rem;
+}
+
+#article .meta .category{
+    margin-top: .4rem;
+}
 /* Footer */
 
 #main-footer{
